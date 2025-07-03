@@ -8,12 +8,5 @@ buildscript {
     }
 }
 
-allprojects {
-    repositories {
-        google()
-        mavenCentral()
-    }
-}
-
 group = 'com.github.YourGitHubUsername'
 version = '1.0.0'

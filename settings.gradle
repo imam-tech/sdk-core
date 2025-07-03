@@ -3,10 +3,11 @@ include(":imlibrary")
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
+        google()
         mavenCentral()
         maven { url 'https://jitpack.io' }
+        flatDir {
+            dirs 'libs' // agar .aar dikenali
+        }
     }
-}
-dependencies {
-    implementation 'com.github.User:Repo:Version'
 }
