@@ -1,4 +1,5 @@
 apply plugin: 'com.android.library'
+apply plugin: 'maven-publish'
 
 android {
     namespace 'com.mac.imlibrary'
@@ -18,4 +19,18 @@ android {
 
 dependencies {
     // Add dependencies if needed
+}
+
+publishing {
+    publications {
+        release(MavenPublication) {
+            groupId = 'io.jitpack'
+            artifactId = 'library'
+            version = '1.0'
+
+            afterEvaluate {
+                from components.release
+            }
+        }
+    }
 }
