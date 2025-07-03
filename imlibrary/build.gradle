@@ -21,6 +21,17 @@ dependencies {
     // Add dependencies if needed
 }
 
+repositories {
+    flatDir {
+        dirs 'libs' // agar .aar dikenali
+    }
+}
+
+dependencies {
+    api(name: 'open_im_sdk', ext: 'aar')
+}
+
+
 publishing {
     publications {
         release(MavenPublication) {
