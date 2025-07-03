@@ -30,7 +30,9 @@ afterEvaluate {
                 artifactId = 'library'
                 version = '1.0'
 
-                artifact("$buildDir/outputs/aar/${project.getName()}-release.aar")
+                artifact("$buildDir/outputs/aar/imlibrary-release.aar") {
+                    builtBy tasks.named("bundleReleaseAar")
+                }
             }
         }
     }
