@@ -1,0 +1,2 @@
+rootProject.name = "im-aar-publisher"
+include(":imlibrary")
