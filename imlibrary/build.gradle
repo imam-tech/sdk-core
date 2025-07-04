@@ -27,7 +27,7 @@ afterEvaluate {
         publications {
             release(MavenPublication) {
                 groupId = 'io.jitpack'
-                artifactId = 'library'
+                artifactId = 'imlibrary'
                 version = '1.0'
 
                 artifact("$buildDir/outputs/aar/imlibrary-release.aar") {
