@@ -26,7 +26,7 @@ afterEvaluate {
     publishing {
         publications {
             release(MavenPublication) {
-                groupId = 'io.jitpack'
+                groupId = 'com.github.imam-tech'
                 artifactId = 'imlibrary'
                 version = '1.0'
 
